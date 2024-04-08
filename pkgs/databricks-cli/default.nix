@@ -2,27 +2,27 @@
 
 let
   pname = "databricks-cli";
-  version = "0.215.0";
+  version = "0.216.0";
 
   url = "https://github.com/databricks/cli/releases/download/v${version}";
 
   sources = {
     x86_64-linux = fetchurl {
       url = "${url}/databricks_cli_${version}_linux_amd64.zip";
-      sha256 = "sha256-0LH05DMm2DejUzxHWPVFrEE1yc1+ogA2Iug1q8LG22Y=";
+      sha256 = "sha256-wmytWJH+/+67t11j25JgkjMU5rp27HvNQuNEyp4jqWw=";
     };
     aarch64-linux = fetchurl {
      url = "${url}/databricks_cli_${version}_linux_arm64.zip";
-     sha256 = "sha256-fYmFSDY+RHXGA2Q6airP7Xo4nOOYIUlecbrw3ocrOJA=";
+     sha256 = "sha256-s2sD/LhQyOTQZ/IHvII6hURJ0pNfnHYusagVqqccOcA=";
     };
 
     x86_64-darwin = fetchurl {
       url = "${url}/databricks_cli_${version}_darwin_amd64.zip";
-      sha256 = "sha256-JW/Tgur0cPKrAPbJdeonKdMSkcwVHZvneA/gLsG65mk=";
+      sha256 = "sha256-0QNwvAAvzAjgQtvvLCSVrSTJulOMpDpezfEkbQhm/Kc=";
     };
     aarch64-darwin = fetchurl {
       url = "${url}/databricks_cli_${version}_darwin_arm64.zip";
-      sha256 = "sha256-Sfxi3F/blbKsuWsqlJtpF6GgZQZgByZ5ratvmRgLo9E=";
+      sha256 = "sha256-tr16U/6PJ3e4oief18NSLa43kgx3q5/SA2bZFa2TkQc=";
     };
   };
 
